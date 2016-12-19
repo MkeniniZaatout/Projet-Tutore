@@ -1,0 +1,5 @@
+Pour info questionCm = question choix multiples
+
+
+J'ai ajouté trois tables : déja questionCM et réponses , lié les deux tables avec une clé étrangere 
+Et une table image lié à la tables questionCm avec une clé étrangère.
