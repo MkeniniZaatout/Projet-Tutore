@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javaScript"> 
@@ -15,15 +16,22 @@
 	// Id de la div reponse
 	var id = 1;
 	// reponse ajouter dans a page 
-	var content = '<form><br><div id="reponse-' + id + '" class="input-group"><span class="input-group-addon">Votre reponse :</span><input id="msg" type="text" class="form-control" name="msg" placeholder="Saisir la reponse"></div></form><input type="button" value="Supprimer la reponse">'    		
+	var content = '<form><br><div id="reponse-' + id + '" class="input-group"><span class="input-group-addon">Votre reponse :</span><input id="msg" type="text" class="form-control" name="msg" placeholder="Saisir la reponse"></div></form><div id="Sup-' + id + '"><input type="button" value="Supprimer la reponse" onclick="supprimerReponse()"></div>'
 		var i;
 		for (var i = 0; i<nbclic; i++) {
 		document.getElementById('Cible').innerHTML = content;
 		id++;
-		content +='<form><br><div id="reponse-' + id++ + '" class="input-group"><span class="input-group-addon">Votre reponse :</span><input id="msg" type="text" class="form-control" name="msg" placeholder="Saisir la reponse"></div></form><input type="button" value="Supprimer la reponse">';
+		content +='<form><br><div id="reponse-' + id + '" class="input-group"><span class="input-group-addon">Votre reponse :</span><input id="msg" type="text" class="form-control" name="msg" placeholder="Saisir la reponse"></div></form><div id="Sup-' + id + '"><input type="button" value="Supprimer la reponse" onclick="supprimerReponse()"></div>';
 		}
 		
-	}		
+	}
+	
+	function supprimerReponse(){
+	$("#reponse-"+nbclic).remove();
+	$("#Sup-"+nbclic).remove();
+	nbclic = nbclic -1;
+	}
+	
 	function Enable(){
 	// Si le champ input id="question" est vide , rendre bouton disabled
 	$('button').prop('disabled', true);
