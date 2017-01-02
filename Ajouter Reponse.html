@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javaScript"> 
+	var nbclic = 0;
+    function ajoutReponse() {
+	// nbclique = nb de fois ou le bouton reponse a était cliqué
+	nbclic++;
+	// Id de la div reponse
+	var id = 1;
+	// reponse ajouter dans a page 
+	var content = '<form><br><div id="reponse-' + id + '" class="input-group"><span class="input-group-addon">Votre reponse :</span><input id="msg" type="text" class="form-control" name="msg" placeholder="Saisir la reponse"></div></form><input type="button" value="Supprimer la reponse">'    		
+		var i;
+		for (var i = 0; i<nbclic; i++) {
+		document.getElementById('Cible').innerHTML = content;
+		id++;
+		content +='<form><br><div id="reponse-' + id++ + '" class="input-group"><span class="input-group-addon">Votre reponse :</span><input id="msg" type="text" class="form-control" name="msg" placeholder="Saisir la reponse"></div></form><input type="button" value="Supprimer la reponse">';
+		}
+		
+	}		
+	function Enable(){
+	// Si le champ input id="question" est vide , rendre bouton disabled
+	$('button').prop('disabled', true);
+	// Si le champ input id="question" est remplis , rendre le boutton utilisable
+	$('button').prop('disabled', false);
+	}
+	
+</script> 
+
+
+<style>
+.myButton {
+	-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
+	background-color:#77b55a;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:13px;
+	font-weight:bold;
+	padding:7px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
+	background-color:#72b352;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+  <h3>Question à Réponse Multiple</h3>
+  <p>Saisir une question à réponse multiple</p>
+  <p>Appuyer sur le bouton pour l'ajout de réponse</p>
+  <p>Puis saisir la réponse </p>
+  
+  <form>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon">Question :</span>
+      <input id="question" type="text" class="form-control" name="msg" placeholder="Saisir la question">
+    </div>
+  </form>
+  <br>
+  <button type="button" class="btn btn-primary btn-block " onclick="ajoutReponse()" title="Ajout une reponse">Ajouter une réponse</button>
+  <!-- disabled  $('button').prop('disabled', true); -->
+  <br>
+  <div id="Cible"></div>
+</div>
+
+</body>
+</html>
