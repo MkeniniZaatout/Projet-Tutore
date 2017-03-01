@@ -2,31 +2,28 @@
 
 #conteneur {
   display: block;
-  padding-top:10em;
+
 margin-left: auto;
 margin-right: auto;
-width: 60em;
+width: 60%;
+	  border-radius:50px;
 /*background-color: rgba(#ffffff, 0);*/
-  border-radius:50px;
+  /*border-radius:50px;*/
   /*text-align: left;*/
 
 }
 
-
-#test
-{
-
-	  border-radius:50px;
-
+#info{
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
-#text
-{
+
+
+#text{
 	margin-left: 100px;
 }
 
-.jumbotron-h1{
-}
 
 #form {
   margin-left: 5em;

@@ -1,0 +1,30 @@
+
+#conteneur {
+
+  margin-top : 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+	  border-radius: 50px;
+  /*text-align: left;*/
+
+}
+.MesResultats{
+  margin-left : 3em;
+  margin-right: 3em;
+}
+
+.QuestionnaireNom{
+display: inline-block;
+
+
+}
+
+.Resultats{
+  display: inline;
+
+float : right;
+
+
+}

@@ -1,0 +1,69 @@
+#conteneur {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 50px;
+}
+#btn-Suivant {
+  position:relative;
+float : right;
+}
+
+#btn-Retour {
+float : left;
+}
+
+
+
+#btn
+
+.btn-circle, .btn-circle-3d{
+  border-radius: 50% !important;
+}
+
+.btn-primary.btn-circle{
+  -webkit-box-shadow: 0px 0px 3px 1px #245580;
+  -moz-box-shadow:    0px 0px 3px 1px #245580;
+  box-shadow:         0px 0px 3px 1px #245580;
+}
+
+.btn-info.btn-circle{
+  -webkit-box-shadow: 0px 0px 3px 1px #28a4c9;
+  -moz-box-shadow:    0px 0px 3px 1px #28a4c9;
+  box-shadow:         0px 0px 3px 1px #28a4c9;
+}
+
+.btn-success.btn-circle{
+  -webkit-box-shadow: 0px 0px 3px 1px #3e8f3e;
+  -moz-box-shadow:    0px 0px 3px 1px #3e8f3e;
+  box-shadow:         0px 0px 3px 1px #3e8f3e;
+}
+
+.btn-default.btn-circle{
+  -webkit-box-shadow: 0px 0px 3px 1px #ccc;
+  -moz-box-shadow:    0px 0px 3px 1px #ccc;
+  box-shadow:         0px 0px 3px 1px #ccc;
+}
+
+.reponses{
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.typeReponseBlock{
+  padding-top: : 3em;
+  display: none;
+  /*padding:15em;
+  display: none; /*On cache tous les div avec la class typeReponseBlock.*/
+  background: white;
+}
+
+.typeImageBlock{
+  padding-top: : 3em;
+  /*padding:15em;*/
+  display: none; /*On cache tous les div avec la class typeReponseBlock.*/
+  background: white;
+}

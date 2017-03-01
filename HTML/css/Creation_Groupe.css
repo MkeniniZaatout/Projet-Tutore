@@ -1,0 +1,12 @@
+
+#conteneur {
+  display: block;
+  margin-top:5em;
+margin-left: auto;
+margin-right: auto;
+width: 60%;
+border-radius:50px;
+  /*text-align: left;*/
+padding-left: 2em;
+padding-right: 2em;
+}

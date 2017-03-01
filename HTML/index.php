@@ -12,15 +12,15 @@
 <body>
 	<div id= "container">
 	<div class="wrapper">
-		<form action="includes/authentification.php" method="post" name="Login_Form" class="form-signin">
-		    <h3 class="form-signin-heading">Quizz</h3>
+		<form action="includes/req_authentification.php" method="post" name="Login_Form" class="form-signin">
+		    <img id="image" src="images/logo.png" style="width : 80%; margin-left : 2em; />
 			  <hr class="colorgraph"><br>
 
 			  <input type="text" class="form-control" name="Username" placeholder="Username" required autofocus >
 			  <input type="password" class="form-control" name="Password" placeholder="Password" required >
 			  <button class="btn btn-lg btn-primary btn-block"  name="Submit" value="login" type="Submit">Se connecter</button>
 				<br>
-				<a id="btn-invite" action="includes/GuestConnect.php" class="btn-secondary btn-lg" href="includes/GuestConnect.php" role="button">invité</a>
+				<a id="btn-invite" action="includes/req_GuestConnect.php" class="btn-secondary btn-lg" href="includes/req_GuestConnect.php" role="button">invité</a>
 		</form>
 
 	</div>

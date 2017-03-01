@@ -1,0 +1,22 @@
+#conteneur {
+  display: block;
+  margin-top:5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius:50px;
+  padding-left: 2em;
+  padding-right: 2em;
+  /*text-align: left;*/
+
+}
+
+.jumbotron {
+/*height: 665px;*/
+
+}
+
+#btn-Suivant {
+  position:relative;
+  text-align : right;
+}

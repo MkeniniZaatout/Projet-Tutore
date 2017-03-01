@@ -1,23 +1,11 @@
 
 #conteneur {
   display: block;
+  padding-top:10em;
 margin-left: auto;
 margin-right: auto;
 width: 60%;
-  margin-top: 10em;
 	  border-radius:50px;
-}
-
-
-#text
-{
-	margin-left: 100px;
-}
-
-.jumbotron-h1{
-}
-
-#deconnexion{
-
+  /*text-align: left;*/
 
 }

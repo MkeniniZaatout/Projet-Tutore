@@ -5,21 +5,24 @@
 <?php
 
 
-$Nom = $_SESSION['user'];
+$Nom = $_SESSION['nom'];
 $Prenom = $_SESSION['prenom'];
+$Admin = $_SESSION['admin'];
 ?>
 
 </head>
 
 <body>
 
-<div id="conteneur">
-  <div id="test" class="jumbotron">
+<div id="conteneur" class="jumbotron">
     <div id = text>
      <h1>Bienvenue</h1>
+     <?php if ($Admin) { ?>
+       <h2>Professeur : <?php echo $Nom." ".$Prenom ?></h2>
+       <?php }else { ?>
      <h2><?php echo $Nom." ".$Prenom ?> </h2>
+     <?php } ?>
     </div>
-  </div>
 </div>
 
 </body>
