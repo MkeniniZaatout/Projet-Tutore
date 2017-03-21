@@ -2,12 +2,13 @@
 <html lang="fr">
 <head>
 <link rel="stylesheet" type="text/css" href="../css/guest.css"/>
+<script type="text/javascript" src="../js/req_Ws.js"></script>
 
 <?php include("../includes/header.php");?>
 
 </head>
 
-<body>
+<body >
 	<div id="conteneur" class="jumbotron">
 
 	    <div id = text>
@@ -19,10 +20,12 @@
 			 <div class="form-group">
 	       <button id="buttonconnection" type="submit" action="../includes/GuestCodeSession.php" class="btn btn-primary">Se Connecter</button>
 	     </div>
+
 	   </form>
 	    </div>
 
 
 	  </div>
+
 </body>
 </html>

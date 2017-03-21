@@ -21,17 +21,17 @@ $Admin = $_SESSION['admin'];
 
   <nav class="navbar navbar-default">
 
-    <div id="navbar"class="container-fluid">
+    <div id="navbar"class="container-fluid" style="background-color:#EEEEEE;">
       <div class="navbar-header">
 
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
         </button>
-        <a id="logo" class="navbar-brand" href="../pages/main.php" >
+        <a id="logo" class="navbar-brand" href="../pages/main.php" style="background-color:#EEEEEE;">
 <img id="image" src="../images/logopetit.png" />
 </a>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color:#EEEEEE;">
         <ul class="nav navbar-nav">
           <li>
               <a href="compte.php">Compte

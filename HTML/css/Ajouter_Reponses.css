@@ -19,7 +19,6 @@ float : left;
 
 
 #btn
-
 .btn-circle, .btn-circle-3d{
   border-radius: 50% !important;
 }
@@ -66,4 +65,8 @@ float : left;
   /*padding:15em;*/
   display: none; /*On cache tous les div avec la class typeReponseBlock.*/
   background: white;
+}
+
+body{
+min-height : inherit;
 }

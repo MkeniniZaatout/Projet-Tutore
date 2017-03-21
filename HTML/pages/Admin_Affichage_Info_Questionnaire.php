@@ -1,10 +1,10 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../css/CSSExemple.css"/>
-<script type="text/javascript" src="../js/Admin_Affichage_Info_Questionnaire.js"></script>
+<script type="text/javascript" src="../js/req_Ws.js"></script>
 <?php include("../includes/header.php");?>
 </head>
 <script>
-InfoQuestionnaire();
+ GetQuestionnaireProf("1");
 </script>
 <body>
 	<div id="conteneur" class="jumbotron">

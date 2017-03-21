@@ -12,15 +12,12 @@ $Prenom = $_SESSION['prenom'];
 </script>
 </head>
 <body>
-
-
       <div id="conteneur" class="jumbotron">
         <div class="btn-group-vertical">
-
           <a id="vosQuestionnaire" type="button" class="btn btn-primary btn-lg btn-block"  href="Admin_Liste_Questionnaire.php">Vos Questionnaires</a>
           <br>
           <?php if ($Admin) {?>
-          <a id="creerQuestionnaire" type="button" class="btn btn-primary btn-lg btn-block" href="Admin_Ajouter_Titre_Questionnaire.php">Créer Questionnaire</a>
+          <a id="creerQuestionnaire" type="button" class="btn btn-primary btn-lg btn-block" href="Admin_Ajouter_Questionnaire.php">Créer Questionnaire</a>
           <?php } else {?>
                <a href="#">Créer Questionnaire
           <?php } ?>
@@ -28,10 +25,8 @@ $Prenom = $_SESSION['prenom'];
           <a id="statistique" type="button" class="btn btn-primary btn-lg btn-block">Statistique</a>
           <br>
           <a id="groupes" type="button" class="btn btn-primary btn-lg btn-block" href="creation_groupes.php">Groupes</a>
-
       </div><!-- jumbotron -->
     </div><!-- conteneur -->
-
 
 </body>
 </html>

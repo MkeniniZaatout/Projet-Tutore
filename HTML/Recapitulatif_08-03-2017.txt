@@ -1,0 +1,38 @@
+
+
+->27/03 => version intégré/
+
+->23/04 -> Debut des test
+
+-> 28/08 => fin des Tests Utilisateurs
+
+-> 12/05 => fin dev/préparation
+
+-> 19/05 => soutenance
+
+
+
+
+Client Etudiant : IOS/W10/android/Web
+-> identifier
+-> repondre questionnaire
+
+  -> questionnaire piloté par
+      -> étudiant -> Mélange ?/stat à la fin
+      -> prof -> Q/Stat/
+
+
+Clien Prof : W10/Web
+   W10/Web
+-> ident
+-> creation Questionnaire/gestion
+-> pilotage questionnaire
+-> stat/Grp/questionnaire
+-> questionGroupe
+
+
+Serveur ->
+->Com HTTPS
+->VM classe publique
+
+-> services clients

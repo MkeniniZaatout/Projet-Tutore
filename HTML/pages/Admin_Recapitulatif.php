@@ -9,7 +9,7 @@ $Prenom = $_SESSION['prenom'];
 <body>
 <div id="conteneur" class="jumbotron">
 
-  <a id="btn-Retour"href="Admin_Accueil_Questionnaire.php">
+  <a id="btn-Retour"href="Admin_Ajouter_Questionnaire.php">
     <button type="button" class="btn btn-default btn-lg">
       <span class="glyphicon glyphicon-arrow-left" aria-hidden="true">
       </span>

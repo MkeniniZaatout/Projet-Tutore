@@ -3,11 +3,10 @@
 <link rel="stylesheet" type="text/css" href="../css/main.css"/>
 <?php include("../includes/header.php");?>
 <?php
-
-
 $Nom = $_SESSION['nom'];
 $Prenom = $_SESSION['prenom'];
 $Admin = $_SESSION['admin'];
+$id = $_SESSION['id'];
 ?>
 
 </head>

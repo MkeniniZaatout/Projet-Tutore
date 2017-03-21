@@ -8,34 +8,4 @@
   padding-left: 2em;
   padding-right: 2em;
   /*text-align: left;*/
-
-}
-
-#footer
-{
-position: absolute;
-padding: 15px 3px 0px 3px;
-bottom:0;
-left: -10%;
-margin-left: 10%;
-width: 80%;
-height: 5%;
-}
-
-#toggle
-{
-  position:absolute;
-  left: 50%;
-  top: 50%;
-  width: 100px;
-  height: 100px;
-  margin-left: -50px; /* Cette valeur doit être la moitié négative de la valeur du width */
-  margin-top: -50px; /* Cette valeur doit être la moitié négative de la valeur du height */
-}
-
-#icone
-{
-  position:absolute;
-  left: 68%;
-  top: 44%;
 }

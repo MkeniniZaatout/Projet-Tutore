@@ -10,7 +10,7 @@ include("req_connect.php");
 
 // On récupère tout le contenu de la table user
 $reponse = $bdd->query('SELECT * FROM user');
-// SELECT nom FROM user WHERE nom != rey; 
+// SELECT nom FROM user WHERE nom != rey;
 // $reponse2 = $bdd2->query('SELECT * FROM UTILISATEUR');
 
 // On affiche chaque entrée une à une
@@ -20,6 +20,7 @@ while ($donnees = $reponse->fetch())
   if ($password == $donnees["password"] && $username == $donnees["nom"] )
   {
     $_SESSION['id']=  $donnees["id"];
+
     $_SESSION['nom']=  $donnees["nom"];
     $_SESSION['prenom']= $donnees["prenom"];
     $_SESSION['email']= $donnees["email"];

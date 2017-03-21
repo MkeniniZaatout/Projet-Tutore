@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <link rel="stylesheet" type="text/css" href="css/index.css"/>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
 <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"  rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -12,7 +12,7 @@
 <body>
 	<div id= "container">
 	<div class="wrapper">
-		<form action="includes/req_authentification.php" method="post" name="Login_Form" class="form-signin">
+		<form action="includes/req_authentification.php" method="post" name="Login_Form" class="form-signin" accept-charset="UTF-8">
 		    <img id="image" src="images/logo.png" style="width : 80%; margin-left : 2em; />
 			  <hr class="colorgraph"><br>
 

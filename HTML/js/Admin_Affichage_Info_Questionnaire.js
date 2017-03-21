@@ -5,7 +5,7 @@ function InfoQuestionnaire(){
 	var aucuneR;
 	var ptmauvaiseR;
 	var idProf;
-			$.getJSON("http://localhost:8080/vvb-ws/rest/questionnaire/2", function( data ){
+			$.getJSON("http://10.0.2.25:9999/vvb-ws/rest/questionnaire/Prof/1", function( data ){
 					$.each( data, function(key , value){
 					nom = data['nom'];
 					temps = data['temps'];
